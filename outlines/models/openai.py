@@ -15,8 +15,8 @@ class OpenAITypeAdapter(ModelTypeAdapter):
     """Type adapter for the OpenAI clients.
 
     `OpenAITypeAdapter` is responsible for preparing the arguments to OpenAI's
-    `completions.create` methods: the input (prompt and possibly image), as well
-    as the output type (only JSON).
+    `completions.create` methods: the input (prompt and possibly image), as
+    well as the output type (only JSON).
 
     """
 

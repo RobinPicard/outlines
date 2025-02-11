@@ -11,9 +11,11 @@ __all__ = ["Anthropic"]
 class AnthropicTypeAdapter(ModelTypeAdapter):
     """Type adapter for the Anthropic clients.
 
-    `AnthropicTypeAdapter` is responsible for preparing the arguments to Anthropic's
-    `messages.create` methods: the input (prompt and possibly image).
-    Anthropic does not support defining the output type, so `format_output_type` is not implemented.
+    `AnthropicTypeAdapter` is responsible for preparing the arguments to
+    Anthropic's `messages.create` methods: the input (prompt and possibly
+    image).
+    Anthropic does not support defining the output type, so
+    `format_output_type` is not implemented.
 
     """
 

@@ -98,9 +98,9 @@ class LlamaCppTokenizer(Tokenizer):
 class LlamaCppTypeAdapter(ModelTypeAdapter):
     """Type adapter for the `llama-cpp-python` library.
 
-    `LlamaCppTypeAdapter` is responsible for preparing the arguments to `llama-cpp-python`'s
-    `Llama.__call__` method: the input (a string prompt), as well as the logits processor
-    (an instance of `LogitsProcessorList`).
+    `LlamaCppTypeAdapter` is responsible for preparing the arguments to
+    `llama-cpp-python`'s `Llama.__call__` method: the input (a string prompt),
+    as well as the logits processor (an instance of `LogitsProcessorList`).
 
     """
 
@@ -124,7 +124,7 @@ class LlamaCppTypeAdapter(ModelTypeAdapter):
         return model_input
 
     def format_output_type(self, output_type):
-        """Generate the logits processor argument to pass to the model (a `LogitsProcessorList`).
+        """Generate the logits processor argument to pass to the model.
 
         Argument
         --------
