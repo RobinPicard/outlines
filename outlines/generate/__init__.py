@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Any, Optional, Union, cast, get_args
 
-from outlines.models import APIModel, LocalModel
+from outlines.models.base import Model
 from outlines.types import Choice, Json, List, Regex
 
 from .api import SequenceGenerator
@@ -30,7 +30,7 @@ class APIGenerator:
 
     """
 
-    model: APIModel
+    model: Model
     output_type: Optional[Union[Json, List, Choice, Regex]] = None
 
     def __call__(self, prompt, **inference_kwargs):
@@ -53,7 +53,7 @@ class LocalGenerator:
 
     """
 
-    model: LocalModel
+    model: Model
     output_type: Optional[Union[Json, List, Choice, Regex]]
 
     def __post_init__(self):
@@ -70,10 +70,10 @@ class LocalGenerator:
 
 
 def Generator(
-    model: Union[LocalModel, APIModel],
+    model: Model,
     output_type: Optional[Union[Json, List, Choice, Regex]] = None,
 ):
-    if isinstance(model, APIModel):  # type: ignore
+    if model.model_type == "api":  # type: ignore
         return APIGenerator(model, output_type)  # type: ignore
     else:
         return LocalGenerator(model, output_type)  # type: ignore
