@@ -9,6 +9,7 @@ codebase.
 from typing import Union
 
 from .anthropic import Anthropic
+from .base import Model, ModelTypeAdapter
 from .exllamav2 import ExLlamaV2Model, exl2
 from .gemini import Gemini
 from .llamacpp import LlamaCpp
@@ -19,6 +20,3 @@ from .transformers_vision import TransformersVision, transformers_vision
 from .vllm import VLLM, vllm
 
 LogitsGenerator = Union[Transformers, LlamaCpp, OpenAI, ExLlamaV2Model, MLXLM, VLLM]
-
-LocalModel = LlamaCpp
-APIModel = Union[AzureOpenAI, OpenAI, Anthropic, Gemini]
