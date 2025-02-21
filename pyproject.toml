@@ -55,6 +55,7 @@ gemini = ["google-generativeai"]
 llamacpp = ["llama-cpp-python", "transformers", "datasets", "numpy<2"]
 exllamav2 = ["exllamav2"]
 ollama = ["ollama"]
+dottxt = ["dottxt"]
 test = [
     "pre-commit",
     "pytest",
@@ -77,7 +78,8 @@ test = [
     "pillow",
     "exllamav2",
     "jax",
-    "ollama"
+    "ollama",
+    "dottxt",
 ]
 test-gpu=["outlines[test]", "vllm; sys_platform == 'linux'"]
 serve = [
@@ -159,6 +161,7 @@ module = [
     "outlines_core.*",
     "genson",
     "ollama.*",
+    "dottxt.*",
 ]
 ignore_missing_imports = true
 
