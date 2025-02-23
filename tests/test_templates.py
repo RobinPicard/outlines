@@ -6,7 +6,11 @@ import pytest
 from pydantic import BaseModel, Field
 
 import outlines
+<<<<<<< HEAD
 from outlines.templates import Template, build_template_from_string
+=======
+from outlines.templates import Template, build_template_from_str
+>>>>>>> 8b15cf3 (Rename `Prompt` to `Template`)
 
 
 def render(content: str, **kwargs):
