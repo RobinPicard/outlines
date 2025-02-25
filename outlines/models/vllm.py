@@ -1,8 +1,6 @@
 import dataclasses
 from typing import TYPE_CHECKING, List, Optional, Union
 
-from outlines.generate.api import GenerationParameters, SamplingParameters
-
 if TYPE_CHECKING:
     from transformers import PreTrainedTokenizerBase
     from vllm import LLM
@@ -46,9 +44,9 @@ class VLLM:
     def generate(
         self,
         prompts: Union[str, List[str]],
-        generation_parameters: GenerationParameters,
+        generation_parameters,
         logits_processor,
-        sampling_parameters: SamplingParameters,
+        sampling_parameters,
         *,
         sampling_params: Optional["SamplingParams"] = None,
         use_tqdm: bool = True,
@@ -86,10 +84,8 @@ class VLLM:
         string is returned.
 
         """
-        from vllm.sampling_params import SamplingParams
-
         if sampling_params is None:
-            sampling_params = SamplingParams()
+            sampling_params = {}
 
         max_tokens, stop_at, seed = dataclasses.astuple(generation_parameters)
 

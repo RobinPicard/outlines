@@ -4,8 +4,6 @@ from typing import TYPE_CHECKING, Iterator, List, Optional, Tuple, TypedDict, Un
 import torch
 from typing_extensions import Unpack
 
-from outlines.generate.api import GenerationParameters, SamplingParameters
-
 if TYPE_CHECKING:
     import torch.LongTensor
     from exllamav2.generator import ExLlamaV2DynamicGenerator, ExLlamaV2Sampler
@@ -55,8 +53,8 @@ class ExLlamaV2Model:
     def prepare_generation_parameters(
         self,
         prompts: Union[str, List[str]],
-        generation_parameters: GenerationParameters,
-        sampling_parameters: SamplingParameters,
+        generation_parameters,
+        sampling_parameters,
         structure_logits_processor,
         **exllamav2_params: Unpack[ExllamaV2Params],
     ) -> Tuple[ExllamaV2Params, Union[str, List[str]]]:
@@ -115,7 +113,7 @@ class ExLlamaV2Model:
         return exllamav2_params, prompts
 
     def reformat_output(
-        self, output: Union[str, List[str]], sampling_parameters: SamplingParameters
+        self, output: Union[str, List[str]], sampling_parameters
     ):
         """
         The purpose of this function is to reformat the output from exllamav2's output format to outline's output format.
@@ -148,9 +146,9 @@ class ExLlamaV2Model:
     def generate(
         self,
         prompts: Union[str, List[str]],
-        generation_parameters: GenerationParameters,
+        generation_parameters,
         structure_logits_processor,
-        sampling_parameters: SamplingParameters,
+        sampling_parameters,
         **exllamav2_params: Unpack[ExllamaV2Params],
     ) -> Union[str, List[str]]:
         exllamav2_params, prompts = self.prepare_generation_parameters(
@@ -182,9 +180,9 @@ class ExLlamaV2Model:
     def stream(
         self,
         prompts: Union[str, List[str]],
-        generation_parameters: GenerationParameters,
+        generation_parameters,
         structure_logits_processor,
-        sampling_parameters: SamplingParameters,
+        sampling_parameters,
         **exllamav2_params: Unpack[ExllamaV2Params],
     ) -> Iterator[Union[str, List[str]]]:
         from exllamav2.generator import ExLlamaV2DynamicJob

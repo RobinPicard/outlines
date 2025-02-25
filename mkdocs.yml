@@ -135,7 +135,6 @@ nav:
           - Chat templating: reference/chat_templating.md
           - Regex DSL: reference/regex_dsl.md
           - Text: reference/text.md
-          - Samplers: reference/samplers.md
           - Structured generation:
               - How does it work?: reference/generation/structured_generation_explanation.md
               - Classification: reference/generation/choices.md
@@ -172,7 +171,6 @@ nav:
       - api/guide.md
       - api/parsing.md
       - api/regex.md
-      - api/samplers.md
   - Community:
       - community/index.md
       - Feedback 🫶: community/feedback.md
