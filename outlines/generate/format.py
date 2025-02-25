@@ -28,7 +28,7 @@ def format(
 
     Returns
     -------
-    A `SequenceGenerator` instance that generates text constrained by the Python type
+    A `SequenceGeneratorAdapter` instance that generates text constrained by the Python type
     and translates this text into the corresponding type.
 
     """

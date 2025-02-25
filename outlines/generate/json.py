@@ -42,7 +42,7 @@ def json(
 
     Returns
     -------
-    A `SequenceGenerator` instance that generates text constrained by the schema_object and
+    A `SequenceGeneratorAdapter` instance that generates text constrained by the schema_object and
     transforms the result if BaseModel is used.
 
     """
