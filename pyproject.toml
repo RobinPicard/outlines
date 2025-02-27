@@ -69,6 +69,7 @@ test = [
     "jax",
     "ollama",
     "dottxt",
+    "sentencepiece",
 ]
 test-gpu=["outlines[test]", "vllm; sys_platform == 'linux'"]
 serve = [
