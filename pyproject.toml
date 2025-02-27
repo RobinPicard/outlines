@@ -66,7 +66,6 @@ test = [
     "google-generativeai",
     "transformers",
     "pillow",
-    "exllamav2",
     "jax",
     "ollama",
     "dottxt",
@@ -114,7 +113,6 @@ enable_incomplete_feature = ["Unpack"]
 
 [[tool.mypy.overrides]]
 module = [
-    "exllamav2.*",
     "jax",
     "jaxlib",
     "jax.numpy",
