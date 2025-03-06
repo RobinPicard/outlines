@@ -53,7 +53,7 @@ def test_dottxt_init_from_client(api_key):
 
 @pytest.mark.api_call
 def test_dottxt_wrong_input_type(api_key):
-    with pytest.raises(TypeError, match="You must provide an output type"):
+    with pytest.raises(TypeError, match="is not available"):
         client = DottxtClient(api_key=api_key)
         model = Dottxt(client)
         model(["prompt"], User)
@@ -70,7 +70,7 @@ def test_dottxt_wrong_inference_parameters(api_key):
 @pytest.mark.api_call
 def test_dottxt_direct_pydantic_call(api_key):
     client = DottxtClient(api_key=api_key)
-    model = Dottxt(client, model_name="meta-llama/Llama-3.1-8B-Instruct")
+    model = Dottxt(client)
     result = model("Create a user", User)
     assert "first_name" in json.loads(result)
 
@@ -78,7 +78,7 @@ def test_dottxt_direct_pydantic_call(api_key):
 @pytest.mark.api_call
 def test_dottxt_direct_jsonschema_call(api_key):
     client = DottxtClient(api_key=api_key)
-    model = Dottxt(client, model_name="meta-llama/Llama-3.1-8B-Instruct")
+    model = Dottxt(client)
     result = model("Create a user", User)
     assert "first_name" in json.loads(result)
 
@@ -86,7 +86,7 @@ def test_dottxt_direct_jsonschema_call(api_key):
 @pytest.mark.api_call
 def test_dottxt_generator_pydantic_call(api_key):
     client = DottxtClient(api_key=api_key)
-    model = Dottxt(client, model_name="meta-llama/Llama-3.1-8B-Instruct")
+    model = Dottxt(client)
     generator = Generator(model, User)
     result = generator("Create a user")
     assert "first_name" in json.loads(result)
