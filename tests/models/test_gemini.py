@@ -1,15 +1,15 @@
-from dataclasses import dataclass
 import io
 import json
+from dataclasses import dataclass
 from enum import Enum
 from typing import Literal
 
-from PIL import Image
+import google.generativeai as genai
 import pytest
 import requests
+from PIL import Image
 from pydantic import BaseModel
 from typing_extensions import TypedDict
-import google.generativeai as genai
 
 import outlines
 from outlines.models.gemini import Gemini
@@ -116,16 +116,9 @@ def test_gemini_simple_json_schema_string(model):
     assert "bar" in json.loads(result)
 
 
-@pytest.mark.api_call
-def test_gemini_simple_typed_dict(model):
-    class Foo(TypedDict):
-        bar: int
-
-    result = model.generate("foo?", Foo)
-    assert isinstance(result, str)
-    assert "bar" in json.loads(result)
-
-
+@pytest.mark.xfail(
+    reason="The Gemini SDK's serialization method does not support Json Schema dictionaries."
+)
 @pytest.mark.api_call
 def test_gemini_simple_json_schema_dict(model):
     schema = {
@@ -134,6 +127,16 @@ def test_gemini_simple_json_schema_dict(model):
         "type": "object",
     }
     result = model.generate("foo?", schema)
+    assert isinstance(result, str)
+    assert "bar" in json.loads(result)
+
+
+@pytest.mark.api_call
+def test_gemini_simple_typed_dict(model):
+    class Foo(TypedDict):
+        bar: int
+
+    result = model.generate("foo?", Foo)
     assert isinstance(result, str)
     assert "bar" in json.loads(result)
 
