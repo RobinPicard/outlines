@@ -12,10 +12,12 @@ from . import airports, countries, locale
 from outlines.types.dsl import (
     Regex,
     CFG,
+    FSM,
     JsonSchema,
     json_schema,
     regex,
     cfg,
+    fsm,
     either,
     optional,
     exactly,
