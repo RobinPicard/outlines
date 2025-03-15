@@ -190,6 +190,10 @@ class Transformers(Model):
         self.tokenizer = TransformerTokenizer(tokenizer)
         self.type_adapter = TransformersTypeAdapter()
 
+    @property
+    def _default_tensor_library_name(self):
+        return "torch"
+
     def _prepare_model_inputs(self, model_input, output_type):
         prompts = self.type_adapter.format_input(model_input)
         input_ids, attention_mask = self.tokenizer.encode(prompts)

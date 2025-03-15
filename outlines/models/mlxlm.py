@@ -74,6 +74,11 @@ class MLXLM(Model):
         self.tokenizer = TransformerTokenizer(tokenizer._tokenizer)
         self.type_adapter = MLXLMTypeAdapter()
 
+
+    @property
+    def _default_tensor_library_name(self):
+        return "mlx"
+
     def generate(self, model_input, output_type=None, **kwargs):
         """Generate text using `mlx-lm`.
 

@@ -67,6 +67,10 @@ class VLLM(Model):
         self.tokenizer = self._get_tokenizer()
         self.type_adapter = VLLMTypeAdapter()
 
+    @property
+    def _default_tensor_library_name(self):
+        return "torch"
+
     def _get_tokenizer(self):
         if hasattr(self.model, "get_tokenizer"):
             tokenizer = self.model.get_tokenizer()

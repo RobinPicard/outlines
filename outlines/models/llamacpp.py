@@ -149,6 +149,10 @@ class LlamaCpp(Model):
         self.model_type = "local"
         self.type_adapter = LlamaCppTypeAdapter()
 
+    @property
+    def _default_tensor_library_name(self):
+        return "numpy"
+
     def generate(self, model_input, output_type, **inference_kwargs):
         """Generate text using `llama-cpp-python`.
 
