@@ -48,6 +48,7 @@ system_template = Template.from_string("System: {{ instruction }}")
 # Create a composite template
 chat_template = Template.from_string("""
 {{ system }}
+
 {{ user }}
 """)
 
@@ -80,6 +81,5 @@ template = Template.from_string(
     "Hello {{ name | uppercase }}!",
     filters={"uppercase": uppercase}
 )
-prompt = template(name="alice")
-print(prompt)  # "Hello ALICE!"
+prompt = template(name="alice")  # "Hello ALICE!"
 ```
