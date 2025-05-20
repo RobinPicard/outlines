@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>outlines.processors.base_logits_processor.OutlinesLogitsProcessor</title>
+    <meta name="generator" content="pydoctor 24.11.2"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          outlines <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html" class="internal-link" title="This class"><wbr></wbr>Outlines<wbr></wbr>Logits<wbr></wbr>Processor</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__call__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__call__">__call__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#process_logits" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.process_logits">process<wbr></wbr>_logits</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tensor_adapter" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.tensor_adapter">tensor<wbr></wbr>_adapter</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="outlines.processors.base_logits_processor.html" class="internal-link" title="The parent of this class">base<wbr></wbr>_logits<wbr></wbr>_processor</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor"><wbr></wbr>Outlines<wbr></wbr>Logits<wbr></wbr>Processor</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType"><wbr></wbr>Tensor<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">outlines</a></code><wbr></wbr>.<code><a href="outlines.processors.html" class="internal-link" title="outlines.processors">processors</a></code><wbr></wbr>.<code><a href="outlines.processors.base_logits_processor.html" class="internal-link" title="outlines.processors.base_logits_processor">base_logits_processor</a></code><wbr></wbr>.<code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor">OutlinesLogitsProcessor</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">OutlinesLogitsProcessor</span>:</code></p><p>Known subclasses: <code><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link">outlines.processors.structured.GuideLogitsProcessor</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__init__">OutlinesLogitsProcessor(tensor_library_name)</a></code></p>
+          <p><a href="classIndex.html#outlines.processors.base_logits_processor.OutlinesLogitsProcessor">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Base class for logits processors.</p>
+<p>This class standardizes the shape of input_ids and logits received and returned by the logits processor. At initialization, it creates a tensor_adapter attribute which is used to manipulate the tensors using the appropriate library for the model (numpy, torch...).</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id103">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__call__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__call__">__call__</a></code></td>
+    <td>Entrypoint for logits processors, this is the method that is called by the model.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#process_logits" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.process_logits">process<wbr></wbr>_logits</a></code></td>
+    <td>Main method to implement for logits processors.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#tensor_adapter" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.tensor_adapter">tensor<wbr></wbr>_adapter</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__call__">
+    
+  </a>
+  <a name="__call__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__call__</span><span class="function-signature">(self, input_ids: <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code>, logits: <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code>) -&gt; <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code></span>:
+    
+    <a class="headerLink" href="#__call__" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__call__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Entrypoint for logits processors, this is the method that is called by the model.</p>
+<p>Because different models use different libraries, we need to standardize the shape of input_ids and logits to ensure they are 2D tensors before calling the unified process_logits method. After processing, the logits are cast back to the original array library type before being returned.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, tensor_library_name: <code>str</code>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overridden in <code><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link">outlines.processors.structured.GuideLogitsProcessor</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.process_logits">
+    
+  </a>
+  <a name="process_logits">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @abstractmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">process_logits</span><span class="function-signature">(self, input_ids: <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code>, logits: <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code>) -&gt; <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code></span>:
+    
+    <a class="headerLink" href="#process_logits" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.process_logits">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overridden in <code><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link">outlines.processors.structured.GuideLogitsProcessor</a></code></div>
+    <div><p class="pre">Main method to implement for logits processors.
+
+This method applies a mask on the logits to bias the generation.
+It is called by the __call__ method that standardizes the shape of
+input_ids and logits to ensure they are 2D tensors.
+
+Important to keep in mind when designing universal logits processors
+- logits processors are only used once and never re-applied for a new
+sequence generator
+- Some models only pass output_ids, some models such as llamacpp and
+transformers prefix with input_ids
+- Some sampling methods, such as beam search, result in unstable
+sequence ordering in models like vLLM</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.tensor_adapter">
+    
+  </a>
+  <a name="tensor_adapter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tensor_adapter</span>: <code><a href="outlines.processors.tensor_adapters.html#TensorAdapterImplementation" class="internal-link" title="outlines.processors.tensor_adapters.TensorAdapterImplementation">TensorAdapterImplementation</a></code> =
+    
+    <a class="headerLink" href="#tensor_adapter" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.tensor_adapter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for outlines,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.2 at 2025-05-20 11:58:17.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

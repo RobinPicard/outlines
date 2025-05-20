@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>outlines.fsm.parsing.PartialScanner</title>
+    <meta name="generator" content="pydoctor 24.11.2"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          outlines <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="outlines.fsm.parsing.PartialScanner.html" class="internal-link" title="This class"><wbr></wbr>Partial<wbr></wbr>Scanner</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#construct_terminal_fsm" class="internal-link" title="outlines.fsm.parsing.PartialScanner.construct_terminal_fsm">construct<wbr></wbr>_terminal<wbr></wbr>_fsm</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="outlines.fsm.parsing.PartialScanner.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_terminals_info" class="internal-link" title="outlines.fsm.parsing.PartialScanner.get_terminals_info">get<wbr></wbr>_terminals<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#match" class="internal-link" title="outlines.fsm.parsing.PartialScanner.match">match</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#allowed_types" class="internal-link" title="outlines.fsm.parsing.PartialScanner.allowed_types">allowed<wbr></wbr>_types</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fsm" class="internal-link" title="outlines.fsm.parsing.PartialScanner.fsm">fsm</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fsms_to_trans_finals" class="internal-link" title="outlines.fsm.parsing.PartialScanner.fsms_to_trans_finals">fsms<wbr></wbr>_to<wbr></wbr>_trans<wbr></wbr>_finals</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#g_regex_flags" class="internal-link" title="outlines.fsm.parsing.PartialScanner.g_regex_flags">g<wbr></wbr>_regex<wbr></wbr>_flags</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#match_whole" class="internal-link" title="outlines.fsm.parsing.PartialScanner.match_whole">match<wbr></wbr>_whole</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#terminals" class="internal-link" title="outlines.fsm.parsing.PartialScanner.terminals">terminals</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#use_bytes" class="internal-link" title="outlines.fsm.parsing.PartialScanner.use_bytes">use<wbr></wbr>_bytes</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_mres" class="internal-link" title="outlines.fsm.parsing.PartialScanner._mres">_mres</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="outlines.fsm.parsing.html" class="internal-link" title="The parent of this class">parsing</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialBasicLexer.html" class="internal-link" title="outlines.fsm.parsing.PartialBasicLexer"><wbr></wbr>Partial<wbr></wbr>Basic<wbr></wbr>Lexer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialContextualLexer.html" class="internal-link" title="outlines.fsm.parsing.PartialContextualLexer"><wbr></wbr>Partial<wbr></wbr>Contextual<wbr></wbr>Lexer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialIndenter.html" class="internal-link" title="outlines.fsm.parsing.PartialIndenter"><wbr></wbr>Partial<wbr></wbr>Indenter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialLALRParser.html" class="internal-link" title="outlines.fsm.parsing.PartialLALRParser"><wbr></wbr>Partial<wbr></wbr>LALRParser</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialLark.html" class="internal-link" title="outlines.fsm.parsing.PartialLark"><wbr></wbr>Partial<wbr></wbr>Lark</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialLexerThread.html" class="internal-link" title="outlines.fsm.parsing.PartialLexerThread"><wbr></wbr>Partial<wbr></wbr>Lexer<wbr></wbr>Thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialParser.html" class="internal-link" title="outlines.fsm.parsing.PartialParser"><wbr></wbr>Partial<wbr></wbr>Parser</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialParserConf.html" class="internal-link" title="outlines.fsm.parsing.PartialParserConf"><wbr></wbr>Partial<wbr></wbr>Parser<wbr></wbr>Conf</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialParserState.html" class="internal-link" title="outlines.fsm.parsing.PartialParserState"><wbr></wbr>Partial<wbr></wbr>Parser<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialParsingFrontend.html" class="internal-link" title="outlines.fsm.parsing.PartialParsingFrontend"><wbr></wbr>Partial<wbr></wbr>Parsing<wbr></wbr>Frontend</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialPostLexConnector.html" class="internal-link" title="outlines.fsm.parsing.PartialPostLexConnector"><wbr></wbr>Partial<wbr></wbr>Post<wbr></wbr>Lex<wbr></wbr>Connector</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialPythonIndenter.html" class="internal-link" title="outlines.fsm.parsing.PartialPythonIndenter"><wbr></wbr>Partial<wbr></wbr>Python<wbr></wbr>Indenter</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialScanner.html" class="internal-link" title="outlines.fsm.parsing.PartialScanner"><wbr></wbr>Partial<wbr></wbr>Scanner</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialTerminalInfo.html" class="internal-link" title="outlines.fsm.parsing.PartialTerminalInfo"><wbr></wbr>Partial<wbr></wbr>Terminal<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.PartialTokensInfo.html" class="internal-link" title="outlines.fsm.parsing.PartialTokensInfo"><wbr></wbr>Partial<wbr></wbr>Tokens<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#fsm_union" class="internal-link" title="outlines.fsm.parsing.fsm_union">fsm<wbr></wbr>_union</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#get_contextual_lexer" class="internal-link" title="outlines.fsm.parsing.get_contextual_lexer">get<wbr></wbr>_contextual<wbr></wbr>_lexer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#get_sub_fsms_from_seq" class="internal-link" title="outlines.fsm.parsing.get_sub_fsms_from_seq">get<wbr></wbr>_sub<wbr></wbr>_fsms<wbr></wbr>_from<wbr></wbr>_seq</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#terminals_to_fsms" class="internal-link" title="outlines.fsm.parsing.terminals_to_fsms">terminals<wbr></wbr>_to<wbr></wbr>_fsms</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#walk_fsm" class="internal-link" title="outlines.fsm.parsing.walk_fsm">walk<wbr></wbr>_fsm</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#ParseStateType" class="internal-link" title="outlines.fsm.parsing.ParseStateType"><wbr></wbr>Parse<wbr></wbr>State<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.fsm.parsing.html#PartialParseState" class="internal-link" title="outlines.fsm.parsing.PartialParseState"><wbr></wbr>Partial<wbr></wbr>Parse<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">outlines</a></code><wbr></wbr>.<code><a href="outlines.fsm.html" class="internal-link" title="outlines.fsm">fsm</a></code><wbr></wbr>.<code><a href="outlines.fsm.parsing.html" class="internal-link" title="outlines.fsm.parsing">parsing</a></code><wbr></wbr>.<code><a href="outlines.fsm.parsing.PartialScanner.html" class="internal-link" title="outlines.fsm.parsing.PartialScanner">PartialScanner</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PartialScanner</span>(Scanner):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="outlines.fsm.parsing.PartialScanner.__init__">PartialScanner(terminals, g_regex_flags, re_, use_bytes, match_whole)</a></code></p>
+          <p><a href="classIndex.html#outlines.fsm.parsing.PartialScanner">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id20">
+  
+  
+  <tr class="classmethod">
+    
+    <td>Class Method</td>
+    <td><code><a href="#construct_terminal_fsm" class="internal-link" title="outlines.fsm.parsing.PartialScanner.construct_terminal_fsm">construct<wbr></wbr>_terminal<wbr></wbr>_fsm</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="outlines.fsm.parsing.PartialScanner.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_terminals_info" class="internal-link" title="outlines.fsm.parsing.PartialScanner.get_terminals_info">get<wbr></wbr>_terminals<wbr></wbr>_info</a></code></td>
+    <td>Get the possible terminal symbols for an FSM state sequence.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#match" class="internal-link" title="outlines.fsm.parsing.PartialScanner.match">match</a></code></td>
+    <td>Determine an FSM match over `text` starting at `pos` and continuing `last_fsm_state_seq`.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#allowed_types" class="internal-link" title="outlines.fsm.parsing.PartialScanner.allowed_types">allowed<wbr></wbr>_types</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#fsm" class="internal-link" title="outlines.fsm.parsing.PartialScanner.fsm">fsm</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#fsms_to_trans_finals" class="internal-link" title="outlines.fsm.parsing.PartialScanner.fsms_to_trans_finals">fsms<wbr></wbr>_to<wbr></wbr>_trans<wbr></wbr>_finals</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#g_regex_flags" class="internal-link" title="outlines.fsm.parsing.PartialScanner.g_regex_flags">g<wbr></wbr>_regex<wbr></wbr>_flags</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#match_whole" class="internal-link" title="outlines.fsm.parsing.PartialScanner.match_whole">match<wbr></wbr>_whole</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#terminals" class="internal-link" title="outlines.fsm.parsing.PartialScanner.terminals">terminals</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#use_bytes" class="internal-link" title="outlines.fsm.parsing.PartialScanner.use_bytes">use<wbr></wbr>_bytes</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_mres" class="internal-link" title="outlines.fsm.parsing.PartialScanner._mres">_mres</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="baseclassmethod">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.construct_terminal_fsm">
+    
+  </a>
+  <a name="construct_terminal_fsm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @classmethod<br />@lru_cache<br />
+    <span class="py-keyword">def</span> <span class="py-defname">construct_terminal_fsm</span><span class="function-signature">(cls, terminal)</span>:
+    
+    <a class="headerLink" href="#construct_terminal_fsm" title="outlines.fsm.parsing.PartialScanner.construct_terminal_fsm">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, terminals, g_regex_flags, re_, use_bytes, match_whole=False)</span>:
+    
+    <a class="headerLink" href="#__init__" title="outlines.fsm.parsing.PartialScanner.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.get_terminals_info">
+    
+  </a>
+  <a name="get_terminals_info">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_terminals_info</span><span class="function-signature">(self, fsm_state_seq) -&gt; <code>tuple[<wbr></wbr>tuple[<wbr></wbr><a href="outlines.fsm.parsing.PartialTerminalInfo.html" class="internal-link" title="outlines.fsm.parsing.PartialTerminalInfo">PartialTerminalInfo</a>, <wbr></wbr><span class="rst-variable-ellipsis">...</span>], <wbr></wbr>tuple[<wbr></wbr><a href="outlines.fsm.parsing.PartialTerminalInfo.html" class="internal-link" title="outlines.fsm.parsing.PartialTerminalInfo">PartialTerminalInfo</a>, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]]</code></span>:
+    
+    <a class="headerLink" href="#get_terminals_info" title="outlines.fsm.parsing.PartialScanner.get_terminals_info">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the possible terminal symbols for an FSM state sequence.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.match">
+    
+  </a>
+  <a name="match">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">match</span><span class="function-signature">(self, text, pos, last_fsm_state_seq: <code>tuple[<wbr></wbr>int, <wbr></wbr><span class="rst-variable-ellipsis">...</span>] | None</code> = None)</span>:
+    
+    <a class="headerLink" href="#match" title="outlines.fsm.parsing.PartialScanner.match">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Determine an FSM match over `text` starting at `pos` and continuing `last_fsm_state_seq`.</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.allowed_types">
+    
+  </a>
+  <a name="allowed_types">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">allowed_types</span> =
+    
+    <a class="headerLink" href="#allowed_types" title="outlines.fsm.parsing.PartialScanner.allowed_types">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.fsm">
+    
+  </a>
+  <a name="fsm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">fsm</span> =
+    
+    <a class="headerLink" href="#fsm" title="outlines.fsm.parsing.PartialScanner.fsm">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.fsms_to_trans_finals">
+    
+  </a>
+  <a name="fsms_to_trans_finals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">fsms_to_trans_finals</span> =
+    
+    <a class="headerLink" href="#fsms_to_trans_finals" title="outlines.fsm.parsing.PartialScanner.fsms_to_trans_finals">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.g_regex_flags">
+    
+  </a>
+  <a name="g_regex_flags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">g_regex_flags</span> =
+    
+    <a class="headerLink" href="#g_regex_flags" title="outlines.fsm.parsing.PartialScanner.g_regex_flags">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.match_whole">
+    
+  </a>
+  <a name="match_whole">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">match_whole</span> =
+    
+    <a class="headerLink" href="#match_whole" title="outlines.fsm.parsing.PartialScanner.match_whole">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.terminals">
+    
+  </a>
+  <a name="terminals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">terminals</span> =
+    
+    <a class="headerLink" href="#terminals" title="outlines.fsm.parsing.PartialScanner.terminals">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner.use_bytes">
+    
+  </a>
+  <a name="use_bytes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">use_bytes</span> =
+    
+    <a class="headerLink" href="#use_bytes" title="outlines.fsm.parsing.PartialScanner.use_bytes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="outlines.fsm.parsing.PartialScanner._mres">
+    
+  </a>
+  <a name="_mres">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_mres</span> =
+    
+    <a class="headerLink" href="#_mres" title="outlines.fsm.parsing.PartialScanner._mres">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for outlines,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.2 at 2025-05-20 11:58:17.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

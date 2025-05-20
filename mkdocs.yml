@@ -130,7 +130,6 @@ plugins:
     - git-revision-date-localized:
         enable_creation_date: true
         type: timeago
-
     - gen-files:
         scripts:
         - scripts/gen_ref_pages.py
@@ -194,6 +193,8 @@ nav:
                 - Logits Processors: features/advanced/logits_processors.md
 
     - API Reference: api_reference/
+
+    - Code Reference: reference/
 
     - Examples:
           - examples/index.md

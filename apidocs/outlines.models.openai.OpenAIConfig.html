@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>outlines.models.openai.OpenAIConfig</title>
+    <meta name="generator" content="pydoctor 24.11.2"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          outlines <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="outlines.models.openai.OpenAIConfig.html" class="internal-link" title="This class"><wbr></wbr>Open<wbr></wbr>AIConfig</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#frequency_penalty" class="internal-link" title="outlines.models.openai.OpenAIConfig.frequency_penalty">frequency<wbr></wbr>_penalty</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logit_bias" class="internal-link" title="outlines.models.openai.OpenAIConfig.logit_bias">logit<wbr></wbr>_bias</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#max_tokens" class="internal-link" title="outlines.models.openai.OpenAIConfig.max_tokens">max<wbr></wbr>_tokens</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#model" class="internal-link" title="outlines.models.openai.OpenAIConfig.model">model</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#n" class="internal-link" title="outlines.models.openai.OpenAIConfig.n">n</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#presence_penalty" class="internal-link" title="outlines.models.openai.OpenAIConfig.presence_penalty">presence<wbr></wbr>_penalty</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#response_format" class="internal-link" title="outlines.models.openai.OpenAIConfig.response_format">response<wbr></wbr>_format</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#seed" class="internal-link" title="outlines.models.openai.OpenAIConfig.seed">seed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="outlines.models.openai.OpenAIConfig.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#temperature" class="internal-link" title="outlines.models.openai.OpenAIConfig.temperature">temperature</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#top_p" class="internal-link" title="outlines.models.openai.OpenAIConfig.top_p">top<wbr></wbr>_p</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#user" class="internal-link" title="outlines.models.openai.OpenAIConfig.user">user</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="outlines.models.openai.html" class="internal-link" title="The parent of this class">openai</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.OpenAI.html" class="internal-link" title="outlines.models.openai.OpenAI"><wbr></wbr>Open<wbr></wbr>AI</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.OpenAIConfig.html" class="internal-link" title="outlines.models.openai.OpenAIConfig"><wbr></wbr>Open<wbr></wbr>AIConfig</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.OpenAILegacy.html" class="internal-link" title="outlines.models.openai.OpenAILegacy"><wbr></wbr>Open<wbr></wbr>AILegacy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.OpenAITypeAdapter.html" class="internal-link" title="outlines.models.openai.OpenAITypeAdapter"><wbr></wbr>Open<wbr></wbr>AIType<wbr></wbr>Adapter</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.html#error_handler" class="internal-link" title="outlines.models.openai.error_handler">error<wbr></wbr>_handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.html#from_openai" class="internal-link" title="outlines.models.openai.from_openai">from<wbr></wbr>_openai</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.openai.html#generate_chat" class="internal-link" title="outlines.models.openai.generate_chat">generate<wbr></wbr>_chat</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">outlines</a></code><wbr></wbr>.<code><a href="outlines.models.html" class="internal-link" title="outlines.models">models</a></code><wbr></wbr>.<code><a href="outlines.models.openai.html" class="internal-link" title="outlines.models.openai">openai</a></code><wbr></wbr>.<code><a href="outlines.models.openai.OpenAIConfig.html" class="internal-link" title="outlines.models.openai.OpenAIConfig">OpenAIConfig</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">OpenAIConfig</span>:</code></p>
+          <p><a href="classIndex.html#outlines.models.openai.OpenAIConfig">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="pre">Represents the parameters of the OpenAI API.
+
+The information was last fetched on 2023/11/20. We document below the
+properties that are specific to the OpenAI API. Not all these properties are
+supported by Outlines.
+
+Parameters
+----------
+model
+    The name of the model. Available models can be found on OpenAI's website.
+frequency_penalty
+    Number between 2.0 and -2.0. Positive values penalize new tokens based on
+    their existing frequency in the text,
+logit_bias
+    Modifies the likelihood of specified tokens to appear in the completion.
+    Number between -100 (forbid) and +100 (only allows).
+n
+    The number of completions to return for each prompt.
+presence_penalty
+    Similar to frequency penalty.
+response_format
+    Specifies the format the model must output. `{"type": "json_object"}`
+    enables JSON mode.
+seed
+    Two completions with the same `seed` value should return the same
+    completion. This is however not guaranteed.
+stop
+    Up to 4 words where the API will stop the completion.
+temperature
+    Number between 0 and 2. Higher values make the output more random, while
+    lower values make it more deterministic.
+top_p
+    Number between 0 and 1. Parameter for nucleus sampling.
+user
+    A unique identifier for the end-user.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id66">
+  
+  
+  <tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#frequency_penalty" class="internal-link" title="outlines.models.openai.OpenAIConfig.frequency_penalty">frequency<wbr></wbr>_penalty</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#logit_bias" class="internal-link" title="outlines.models.openai.OpenAIConfig.logit_bias">logit<wbr></wbr>_bias</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#max_tokens" class="internal-link" title="outlines.models.openai.OpenAIConfig.max_tokens">max<wbr></wbr>_tokens</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#model" class="internal-link" title="outlines.models.openai.OpenAIConfig.model">model</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#n" class="internal-link" title="outlines.models.openai.OpenAIConfig.n">n</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#presence_penalty" class="internal-link" title="outlines.models.openai.OpenAIConfig.presence_penalty">presence<wbr></wbr>_penalty</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#response_format" class="internal-link" title="outlines.models.openai.OpenAIConfig.response_format">response<wbr></wbr>_format</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#seed" class="internal-link" title="outlines.models.openai.OpenAIConfig.seed">seed</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#stop" class="internal-link" title="outlines.models.openai.OpenAIConfig.stop">stop</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#temperature" class="internal-link" title="outlines.models.openai.OpenAIConfig.temperature">temperature</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#top_p" class="internal-link" title="outlines.models.openai.OpenAIConfig.top_p">top<wbr></wbr>_p</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#user" class="internal-link" title="outlines.models.openai.OpenAIConfig.user">user</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.frequency_penalty">
+    
+  </a>
+  <a name="frequency_penalty">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">frequency_penalty</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#frequency_penalty" title="outlines.models.openai.OpenAIConfig.frequency_penalty">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.logit_bias">
+    
+  </a>
+  <a name="logit_bias">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logit_bias</span>: <code>dict[<wbr></wbr>int, <wbr></wbr>int]</code> =
+    
+    <a class="headerLink" href="#logit_bias" title="outlines.models.openai.OpenAIConfig.logit_bias">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.max_tokens">
+    
+  </a>
+  <a name="max_tokens">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">max_tokens</span>: <code>int | None</code> =
+    
+    <a class="headerLink" href="#max_tokens" title="outlines.models.openai.OpenAIConfig.max_tokens">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.model">
+    
+  </a>
+  <a name="model">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">model</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#model" title="outlines.models.openai.OpenAIConfig.model">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.n">
+    
+  </a>
+  <a name="n">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">n</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#n" title="outlines.models.openai.OpenAIConfig.n">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.presence_penalty">
+    
+  </a>
+  <a name="presence_penalty">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">presence_penalty</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#presence_penalty" title="outlines.models.openai.OpenAIConfig.presence_penalty">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.response_format">
+    
+  </a>
+  <a name="response_format">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">response_format</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>str] | None</code> =
+    
+    <a class="headerLink" href="#response_format" title="outlines.models.openai.OpenAIConfig.response_format">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.seed">
+    
+  </a>
+  <a name="seed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">seed</span>: <code>int | None</code> =
+    
+    <a class="headerLink" href="#seed" title="outlines.models.openai.OpenAIConfig.seed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stop</span>: <code>str | list[<wbr></wbr>str] | None</code> =
+    
+    <a class="headerLink" href="#stop" title="outlines.models.openai.OpenAIConfig.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.temperature">
+    
+  </a>
+  <a name="temperature">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">temperature</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#temperature" title="outlines.models.openai.OpenAIConfig.temperature">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.top_p">
+    
+  </a>
+  <a name="top_p">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">top_p</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#top_p" title="outlines.models.openai.OpenAIConfig.top_p">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="outlines.models.openai.OpenAIConfig.user">
+    
+  </a>
+  <a name="user">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">user</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#user" title="outlines.models.openai.OpenAIConfig.user">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for outlines,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.2 at 2025-05-20 11:58:17.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

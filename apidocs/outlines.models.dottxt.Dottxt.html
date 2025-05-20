@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>outlines.models.dottxt.Dottxt</title>
+    <meta name="generator" content="pydoctor 24.11.2"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          outlines <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="outlines.models.dottxt.Dottxt.html" class="internal-link" title="This class"><wbr></wbr>Dottxt</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="outlines.models.dottxt.Dottxt.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#generate" class="internal-link" title="outlines.models.dottxt.Dottxt.generate">generate</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#generate_stream" class="internal-link" title="outlines.models.dottxt.Dottxt.generate_stream">generate<wbr></wbr>_stream</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.base.Model.html#__call__" class="internal-link" title="outlines.models.base.Model.__call__">__call__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.base.Model.html#stream" class="internal-link" title="outlines.models.base.Model.stream">stream</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#client" class="internal-link" title="outlines.models.dottxt.Dottxt.client">client</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#model_name" class="internal-link" title="outlines.models.dottxt.Dottxt.model_name">model<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#model_revision" class="internal-link" title="outlines.models.dottxt.Dottxt.model_revision">model<wbr></wbr>_revision</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#type_adapter" class="internal-link" title="outlines.models.dottxt.Dottxt.type_adapter">type<wbr></wbr>_adapter</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.base.Model.html#tensor_library_name" class="internal-link" title="outlines.models.base.Model.tensor_library_name">tensor<wbr></wbr>_library<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="outlines.models.dottxt.html" class="internal-link" title="The parent of this class">dottxt</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.dottxt.Dottxt.html" class="internal-link" title="outlines.models.dottxt.Dottxt"><wbr></wbr>Dottxt</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.dottxt.DottxtTypeAdapter.html" class="internal-link" title="outlines.models.dottxt.DottxtTypeAdapter"><wbr></wbr>Dottxt<wbr></wbr>Type<wbr></wbr>Adapter</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.models.dottxt.html#from_dottxt" class="internal-link" title="outlines.models.dottxt.from_dottxt">from<wbr></wbr>_dottxt</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">outlines</a></code><wbr></wbr>.<code><a href="outlines.models.html" class="internal-link" title="outlines.models">models</a></code><wbr></wbr>.<code><a href="outlines.models.dottxt.html" class="internal-link" title="outlines.models.dottxt">dottxt</a></code><wbr></wbr>.<code><a href="outlines.models.dottxt.Dottxt.html" class="internal-link" title="outlines.models.dottxt.Dottxt">Dottxt</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Dottxt</span>(<a href="outlines.models.base.Model.html" class="internal-link" title="outlines.models.base.Model">Model</a>):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="outlines.models.dottxt.Dottxt.__init__">Dottxt(client, model_name, model_revision)</a></code></p>
+          <p><a href="classIndex.html#outlines.models.dottxt.Dottxt">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Thin wrapper around the `dottxt.client.Dottxt` client.</p>
+<p>This wrapper is used to convert the input and output types specified by the users at a higher level to arguments to the `dottxt.client.Dottxt` client.</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id43">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="outlines.models.dottxt.Dottxt.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#generate" class="internal-link" title="outlines.models.dottxt.Dottxt.generate">generate</a></code></td>
+    <td>Generate a response from the model.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#generate_stream" class="internal-link" title="outlines.models.dottxt.Dottxt.generate_stream">generate<wbr></wbr>_stream</a></code></td>
+    <td>Generate a stream of responses from the model.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#client" class="internal-link" title="outlines.models.dottxt.Dottxt.client">client</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#model_name" class="internal-link" title="outlines.models.dottxt.Dottxt.model_name">model<wbr></wbr>_name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#model_revision" class="internal-link" title="outlines.models.dottxt.Dottxt.model_revision">model<wbr></wbr>_revision</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#type_adapter" class="internal-link" title="outlines.models.dottxt.Dottxt.type_adapter">type<wbr></wbr>_adapter</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="outlines.models.base.Model.html" class="internal-link" title="outlines.models.base.Model">Model</a></code>:
+            </p>
+            <table class="children sortable" id="id44">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="outlines.models.base.Model.html#__call__" class="internal-link" title="outlines.models.base.Model.__call__">__call__</a></code></td>
+    <td>Call the model.</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="outlines.models.base.Model.html#stream" class="internal-link" title="outlines.models.base.Model.stream">stream</a></code></td>
+    <td>Stream a response from the model.</td>
+  </tr><tr class="baseclassvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="outlines.models.base.Model.html#tensor_library_name" class="internal-link" title="outlines.models.base.Model.tensor_library_name">tensor<wbr></wbr>_library<wbr></wbr>_name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, client: <code><a href="outlines.models.dottxt.Dottxt.html" class="internal-link" title="outlines.models.dottxt.Dottxt">Dottxt</a></code>, model_name: <code>str | None</code> = None, model_revision: <code>str</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="outlines.models.dottxt.Dottxt.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.generate">
+    
+  </a>
+  <a name="generate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">generate</span><span class="function-signature">(self, model_input, output_type=None, **inference_kwargs)</span>:
+    
+    <a class="headerLink" href="#generate" title="outlines.models.dottxt.Dottxt.generate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="outlines.models.base.Model.html#generate" class="internal-link">outlines.models.base.Model.generate</a></code></div>
+    <div><p>Generate a response from the model.</p>
+<p>The output_type argument contains a logits processor for local models while it contains a type (Json, Enum...) for the API-based models. This method is not intended to be used directly by end users.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.generate_stream">
+    
+  </a>
+  <a name="generate_stream">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">generate_stream</span><span class="function-signature">(self, model_input, output_type=None, **inference_kwargs)</span>:
+    
+    <a class="headerLink" href="#generate_stream" title="outlines.models.dottxt.Dottxt.generate_stream">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="outlines.models.base.Model.html#generate_stream" class="internal-link">outlines.models.base.Model.generate_stream</a></code></div>
+    <div><p>Generate a stream of responses from the model.</p>
+<p>The output_type argument contains a logits processor for local models while it contains a type (Json, Enum...) for the API-based models. This method is not intended to be used directly by end users.</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.client">
+    
+  </a>
+  <a name="client">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">client</span> =
+    
+    <a class="headerLink" href="#client" title="outlines.models.dottxt.Dottxt.client">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.model_name">
+    
+  </a>
+  <a name="model_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">model_name</span> =
+    
+    <a class="headerLink" href="#model_name" title="outlines.models.dottxt.Dottxt.model_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.model_revision">
+    
+  </a>
+  <a name="model_revision">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">model_revision</span> =
+    
+    <a class="headerLink" href="#model_revision" title="outlines.models.dottxt.Dottxt.model_revision">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.models.dottxt.Dottxt.type_adapter">
+    
+  </a>
+  <a name="type_adapter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">type_adapter</span> =
+    
+    <a class="headerLink" href="#type_adapter" title="outlines.models.dottxt.Dottxt.type_adapter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <code><a href="outlines.models.base.Model.html#type_adapter" class="internal-link">outlines.models.base.Model.type_adapter</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for outlines,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.2 at 2025-05-20 11:58:17.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

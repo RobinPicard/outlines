@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>outlines.processors.structured.GuideLogitsProcessor</title>
+    <meta name="generator" content="pydoctor 24.11.2"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          outlines <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link" title="This class"><wbr></wbr>Guide<wbr></wbr>Logits<wbr></wbr>Processor</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#copy" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.copy">copy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#process_logits" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.process_logits">process<wbr></wbr>_logits</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html#__call__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__call__">__call__</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#guide" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.guide">guide</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tokenizer" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.tokenizer">tokenizer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_guide_states" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor._guide_states">_guide<wbr></wbr>_states</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_seq_start_idx" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor._seq_start_idx">_seq<wbr></wbr>_start<wbr></wbr>_idx</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html#tensor_adapter" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.tensor_adapter">tensor<wbr></wbr>_adapter</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="outlines.processors.structured.html" class="internal-link" title="The parent of this class">structured</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.structured.CFGLogitsProcessor.html" class="internal-link" title="outlines.processors.structured.CFGLogitsProcessor"><wbr></wbr>CFGLogits<wbr></wbr>Processor</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor"><wbr></wbr>Guide<wbr></wbr>Logits<wbr></wbr>Processor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.structured.JSONLogitsProcessor.html" class="internal-link" title="outlines.processors.structured.JSONLogitsProcessor"><wbr></wbr>JSONLogits<wbr></wbr>Processor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="outlines.processors.structured.RegexLogitsProcessor.html" class="internal-link" title="outlines.processors.structured.RegexLogitsProcessor"><wbr></wbr>Regex<wbr></wbr>Logits<wbr></wbr>Processor</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">outlines</a></code><wbr></wbr>.<code><a href="outlines.processors.html" class="internal-link" title="outlines.processors">processors</a></code><wbr></wbr>.<code><a href="outlines.processors.structured.html" class="internal-link" title="outlines.processors.structured">structured</a></code><wbr></wbr>.<code><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor">GuideLogitsProcessor</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">GuideLogitsProcessor</span>(<a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor">OutlinesLogitsProcessor</a>):</code></p><p>Known subclasses: <code><a href="outlines.processors.structured.CFGLogitsProcessor.html" class="internal-link">outlines.processors.structured.CFGLogitsProcessor</a></code>, <code><a href="outlines.processors.structured.RegexLogitsProcessor.html" class="internal-link">outlines.processors.structured.RegexLogitsProcessor</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.__init__">GuideLogitsProcessor(tokenizer, guide, tensor_library_name)</a></code></p>
+          <p><a href="classIndex.html#outlines.processors.structured.GuideLogitsProcessor">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="pre">Bias generation using a finite
+
+Attributes
+----------
+tokenizer
+    The tokenizer used to convert tokens to ids.
+guide
+    The `outlines.processors.guide` which is used to bias the logits.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id110">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.__init__">__init__</a></code></td>
+    <td>A Guide-based logits processor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#copy" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.copy">copy</a></code></td>
+    <td>Return a copy of the logits processor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#process_logits" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.process_logits">process<wbr></wbr>_logits</a></code></td>
+    <td>Use the Guide to bias the logits before sampling the next token.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#guide" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.guide">guide</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#tokenizer" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor.tokenizer">tokenizer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_guide_states" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor._guide_states">_guide<wbr></wbr>_states</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_seq_start_idx" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor._seq_start_idx">_seq<wbr></wbr>_start<wbr></wbr>_idx</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor">OutlinesLogitsProcessor</a></code>:
+            </p>
+            <table class="children sortable" id="id111">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html#__call__" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__call__">__call__</a></code></td>
+    <td>Entrypoint for logits processors, this is the method that is called by the model.</td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html#tensor_adapter" class="internal-link" title="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.tensor_adapter">tensor<wbr></wbr>_adapter</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, tokenizer: <code><a href="outlines.models.tokenizer.Tokenizer.html" class="internal-link" title="outlines.models.tokenizer.Tokenizer">Tokenizer</a></code>, guide: <code><a href="outlines.processors.guide.Guide.html" class="internal-link" title="outlines.processors.guide.Guide">Guide</a></code>, tensor_library_name: <code>str</code>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="outlines.processors.structured.GuideLogitsProcessor.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html#__init__" class="internal-link">outlines.processors.base_logits_processor.OutlinesLogitsProcessor.__init__</a></code></div><div class="interfaceinfo">overridden in <code><a href="outlines.processors.structured.CFGLogitsProcessor.html" class="internal-link">outlines.processors.structured.CFGLogitsProcessor</a></code>, <code><a href="outlines.processors.structured.RegexLogitsProcessor.html" class="internal-link">outlines.processors.structured.RegexLogitsProcessor</a></code></div>
+    <div><p class="pre">A Guide-based logits processor.
+
+Parameters
+----------
+tokenizer
+    The tokenizer used to convert tokens to ids.
+guide
+    The `outlines.processors.guide. which is used to bias the logits.
+tensor_library_name
+    The name of the library to use to manipulate the tensors.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor.copy">
+    
+  </a>
+  <a name="copy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">copy</span><span class="function-signature">(self) -&gt; <code><a href="outlines.processors.structured.GuideLogitsProcessor.html" class="internal-link" title="outlines.processors.structured.GuideLogitsProcessor">GuideLogitsProcessor</a></code></span>:
+    
+    <a class="headerLink" href="#copy" title="outlines.processors.structured.GuideLogitsProcessor.copy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return a copy of the logits processor.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor.process_logits">
+    
+  </a>
+  <a name="process_logits">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">process_logits</span><span class="function-signature">(self, input_ids: <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code>, logits: <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code>) -&gt; <code><a href="outlines.processors.base_logits_processor.html#TensorType" class="internal-link" title="outlines.processors.base_logits_processor.TensorType">TensorType</a></code></span>:
+    
+    <a class="headerLink" href="#process_logits" title="outlines.processors.structured.GuideLogitsProcessor.process_logits">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="outlines.processors.base_logits_processor.OutlinesLogitsProcessor.html#process_logits" class="internal-link">outlines.processors.base_logits_processor.OutlinesLogitsProcessor.process_logits</a></code></div><div class="interfaceinfo">overridden in <code><a href="outlines.processors.structured.CFGLogitsProcessor.html" class="internal-link">outlines.processors.structured.CFGLogitsProcessor</a></code></div>
+    <div><p class="pre">Use the Guide to bias the logits before sampling the next token.
+
+Parameters
+----------
+input_ids
+    The input token ids.
+logits
+    The logits.
+
+Returns
+-------
+The biased logits.</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor.guide">
+    
+  </a>
+  <a name="guide">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">guide</span>: <code><a href="outlines.processors.guide.Guide.html" class="internal-link" title="outlines.processors.guide.Guide">Guide</a></code> =
+    
+    <a class="headerLink" href="#guide" title="outlines.processors.structured.GuideLogitsProcessor.guide">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <code><a href="outlines.processors.structured.CFGLogitsProcessor.html" class="internal-link">outlines.processors.structured.CFGLogitsProcessor</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor.tokenizer">
+    
+  </a>
+  <a name="tokenizer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tokenizer</span>: <code><a href="outlines.models.tokenizer.Tokenizer.html" class="internal-link" title="outlines.models.tokenizer.Tokenizer">Tokenizer</a></code> =
+    
+    <a class="headerLink" href="#tokenizer" title="outlines.processors.structured.GuideLogitsProcessor.tokenizer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor._guide_states">
+    
+  </a>
+  <a name="_guide_states">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_guide_states</span>: <code>dict[<wbr></wbr>int, <wbr></wbr>Any]</code> =
+    
+    <a class="headerLink" href="#_guide_states" title="outlines.processors.structured.GuideLogitsProcessor._guide_states">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="outlines.processors.structured.GuideLogitsProcessor._seq_start_idx">
+    
+  </a>
+  <a name="_seq_start_idx">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_seq_start_idx</span>: <code>int | None</code> =
+    
+    <a class="headerLink" href="#_seq_start_idx" title="outlines.processors.structured.GuideLogitsProcessor._seq_start_idx">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <code><a href="outlines.processors.structured.CFGLogitsProcessor.html" class="internal-link">outlines.processors.structured.CFGLogitsProcessor</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for outlines,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.2 at 2025-05-20 11:58:17.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
