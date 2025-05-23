@@ -20,17 +20,7 @@ The `Generator` constructor is the core component of Outlines v1. It accepts a [
 
 ## Parameters
 
-- **model**: An instance of an Outlines [model](../reference/available_models)
-  - If the model provided is aysnc, the constructor will return an async generator
-
-- **output_type**: Optional. The desired output structure expressed as an [output type](/api/types)
-  - If `None`, the generator will generate unconstrained text
-
-- **processor**: Optional, keyword-only. An instance of an `OutlinesLogitsProcessor` (see documentation on [logits processors](/api/logits_processors))
-  - Advanced usage for directly providing a custom logits processor.
-  - Only supported for `SteerableModel` instances.
-
- The `output_type` and `processor` parameters are mutually exclusive. Provide at most one.
+::: outlines.generator.Generator
 
 ## Returns
 

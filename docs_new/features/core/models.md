@@ -7,6 +7,7 @@ title: Models
 Outlines models are objects that wrap an inference client or engine. Models provide a standardized interface to generate structured text.
 
 Models available in Outlines:
+
 - [Anthropic](../../models/anthropic)
 - [Dottxt](../../models/dottxt)
 - [Gemini](../../models/gemini)
@@ -80,12 +81,14 @@ In the case of local models, the text generation happens within the provider obj
 In the case of server-based models, the provider object used to instantiate the model is a client that sends a request to a server that is in charge of the actual text generation. As a result, we have limited control over text generation and some output types are not supported. For example, OpenAI does not currently support regular expression structured generation.
 
 Local models:
+
 - LlamaCpp
 - MLXLM
 - Transformers
 - VLLMOffline
 
 Server-based models:
+
 - Anthropic
 - Dottxt
 - Gemini

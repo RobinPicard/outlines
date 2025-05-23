@@ -167,6 +167,7 @@ nav:
                 - Migrating to v1: user_guide/migration.md
 
     - Features:
+          - features/index.md
           - Core:
                 - Generator: features/core/generator.md
                 - Models: features/core/models.md
