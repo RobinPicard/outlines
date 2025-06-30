@@ -685,12 +685,12 @@
   
   
     <li class="md-nav__item">
-      <a href="licence/" class="md-nav__link">
+      <a href="guide/vlm/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Licence
+    Vision-Language Models
     
   </span>
   
@@ -707,44 +707,22 @@
   
   
   
-    
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="guide/fastapi_vllm_deployment/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
-    Utility
+    Deploying with FastAPI
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            Utility
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -764,14 +742,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -3251,29 +3221,6 @@
   
   
     <li class="md-nav__item">
-      <a href="examples/atomic_caption/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Vision-Language Models
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="examples/read-pdfs/" class="md-nav__link">
         
   
@@ -3381,10 +3328,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_17" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_16" >
         
           
-          <label class="md-nav__link" for="__nav_5_17" id="__nav_5_17_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_16" id="__nav_5_16_label" tabindex="0">
             
   
   
@@ -3397,8 +3344,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_17_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_17">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_16">
             <span class="md-nav__icon md-icon"></span>
             Run on the cloud
           </label>
@@ -3807,8 +3754,8 @@
 
 <h1 id="_1"></h1>
 <figure>
-<p><img alt="" src="/assets/images/logo-light-mode.svg#only-light" width="500" />
-<img alt="" src="/assets/images/logo-dark-mode.svg#only-dark" width="500" /></p>
+<p><img alt="" src="assets/images/logo-light-mode.svg#only-light" width="500" />
+<img alt="" src="assets/images/logo-dark-mode.svg#only-dark" width="500" /></p>
 </figure>
 <p>LLMs are powerful but their outputs are unpredictable. Most solutions attempt to fix bad outputs after generation using parsing, regex, or fragile code that breaks easily.</p>
 <p>Outlines guarantees structured outputs during generation — directly from any LLM.</p>
@@ -3826,28 +3773,28 @@
 <a class="md-button" href="https://github.com/dottxt-ai/outlines">GitHub</a></p>
 </figure>
 <h2 id="see-it-in-action">See it in action</h2>
-<div class="language-python highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span style="color: #008000; font-weight: bold">from</span><span style="color: #BBB"> </span><span style="color: #00F; font-weight: bold">pydantic</span><span style="color: #BBB"> </span><span style="color: #008000; font-weight: bold">import</span> BaseModel
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span style="color: #008000; font-weight: bold">from</span><span style="color: #BBB"> </span><span style="color: #00F; font-weight: bold">typing</span><span style="color: #BBB"> </span><span style="color: #008000; font-weight: bold">import</span> Literal
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span style="color: #008000; font-weight: bold">import</span><span style="color: #BBB"> </span><span style="color: #00F; font-weight: bold">outlines</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span style="color: #008000; font-weight: bold">import</span><span style="color: #BBB"> </span><span style="color: #00F; font-weight: bold">openai</span>
+<div class="language-python highlight" style="background: #2E3440"><pre style="line-height: 125%;"><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span style="color: #81A1C1; font-weight: bold">from</span><span style="color: #D8DEE9"> </span><span style="color: #8FBCBB">pydantic</span><span style="color: #D8DEE9"> </span><span style="color: #81A1C1; font-weight: bold">import</span> <span style="color: #D8DEE9">BaseModel</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span style="color: #81A1C1; font-weight: bold">from</span><span style="color: #D8DEE9"> </span><span style="color: #8FBCBB">typing</span><span style="color: #D8DEE9"> </span><span style="color: #81A1C1; font-weight: bold">import</span> <span style="color: #D8DEE9">Literal</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span style="color: #81A1C1; font-weight: bold">import</span><span style="color: #D8DEE9"> </span><span style="color: #8FBCBB">outlines</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span style="color: #81A1C1; font-weight: bold">import</span><span style="color: #D8DEE9"> </span><span style="color: #8FBCBB">openai</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span style="color: #008000; font-weight: bold">class</span><span style="color: #BBB"> </span><span style="color: #00F; font-weight: bold">Customer</span>(BaseModel):
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    name: <span style="color: #008000">str</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    urgency: Literal[<span style="color: #BA2121">&quot;high&quot;</span>, <span style="color: #BA2121">&quot;medium&quot;</span>, <span style="color: #BA2121">&quot;low&quot;</span>]
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    issue: <span style="color: #008000">str</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span style="color: #81A1C1; font-weight: bold">class</span><span style="color: #D8DEE9"> </span><span style="color: #8FBCBB">Customer</span><span style="color: #ECEFF4">(</span><span style="color: #D8DEE9">BaseModel</span><span style="color: #ECEFF4">):</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span style="color: #D8DEE9">name</span><span style="color: #ECEFF4">:</span> <span style="color: #81A1C1">str</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span style="color: #D8DEE9">urgency</span><span style="color: #ECEFF4">:</span> <span style="color: #D8DEE9">Literal</span><span style="color: #ECEFF4">[</span><span style="color: #A3BE8C">&quot;high&quot;</span><span style="color: #ECEFF4">,</span> <span style="color: #A3BE8C">&quot;medium&quot;</span><span style="color: #ECEFF4">,</span> <span style="color: #A3BE8C">&quot;low&quot;</span><span style="color: #ECEFF4">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span style="color: #D8DEE9">issue</span><span style="color: #ECEFF4">:</span> <span style="color: #81A1C1">str</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>client <span style="color: #666">=</span> openai<span style="color: #666">.</span>OpenAI()
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>model <span style="color: #666">=</span> outlines<span style="color: #666">.</span>from_openai(client, <span style="color: #BA2121">&quot;gpt-4o&quot;</span>)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span style="color: #D8DEE9">client</span> <span style="color: #81A1C1; font-weight: bold">=</span> <span style="color: #D8DEE9">openai</span><span style="color: #81A1C1; font-weight: bold">.</span><span style="color: #D8DEE9">OpenAI</span><span style="color: #ECEFF4">()</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span style="color: #D8DEE9">model</span> <span style="color: #81A1C1; font-weight: bold">=</span> <span style="color: #D8DEE9">outlines</span><span style="color: #81A1C1; font-weight: bold">.</span><span style="color: #D8DEE9">from_openai</span><span style="color: #ECEFF4">(</span><span style="color: #D8DEE9">client</span><span style="color: #ECEFF4">,</span> <span style="color: #A3BE8C">&quot;gpt-4o&quot;</span><span style="color: #ECEFF4">)</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>customer <span style="color: #666">=</span> model(
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span style="color: #BA2121">&quot;Alice needs help with login issues ASAP&quot;</span>,
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    Customer
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>)
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span style="color: #3D7B7B; font-style: italic"># ✓ Always returns valid Customer object</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span style="color: #3D7B7B; font-style: italic"># ✓ No parsing, no errors, no retries</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span style="color: #D8DEE9">customer</span> <span style="color: #81A1C1; font-weight: bold">=</span> <span style="color: #D8DEE9">model</span><span style="color: #ECEFF4">(</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span style="color: #A3BE8C">&quot;Alice needs help with login issues ASAP&quot;</span><span style="color: #ECEFF4">,</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span style="color: #D8DEE9">Customer</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span style="color: #ECEFF4">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span style="color: #616E87; font-style: italic"># ✓ Always returns valid Customer object</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span style="color: #616E87; font-style: italic"># ✓ No parsing, no errors, no retries</span>
 </span></code></pre></div>
 <h2 id="quick-install">Quick install</h2>
-<div class="language-shell highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span style="color: #BBB"> </span>install<span style="color: #BBB"> </span>outlines
+<div class="language-shell highlight" style="background: #2E3440"><pre style="line-height: 125%;"><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span style="color: #D8DEE9"> </span>install<span style="color: #D8DEE9"> </span>outlines
 </span></code></pre></div>
 <h2 id="features">Features</h2>
 <div class="grid cards">
@@ -3860,16 +3807,18 @@
 </div>
 <h2 id="supported-inference-apis-libraries-servers">Supported inference APIs, libraries &amp; servers</h2>
 <ul>
-<li><a href="reference/models/vllm.md">vLLM</a></li>
-<li><a href="reference/models/transformers.md">Transformers</a></li>
-<li><a href="reference/models/llamacpp.md">llama.cpp</a></li>
-<li><a href="reference/models/ollama.md">Ollama</a></li>
-<li><a href="reference/models/mlxlm.md">MLX-LM</a></li>
-<li><a href="reference/models/sglang.md">SgLang</a></li>
-<li><a href="reference/models/tgi.md">TGI</a></li>
-<li><a href="reference/models/openai.md">OpenAI</a></li>
-<li><a href="reference/models/anthropic.md">Anthropic</a></li>
-<li><a href="reference/models/gemini.md">Gemini</a></li>
+<li><a href="features/models/vllm/">vLLM</a></li>
+<li><a href="features/models/vllm_offline/">vLLM offline</a></li>
+<li><a href="features/models/transformers/">Transformers</a></li>
+<li><a href="features/models/llamacpp/">llama.cpp</a></li>
+<li><a href="features/models/ollama/">Ollama</a></li>
+<li><a href="features/models/mlxlm/">MLX-LM</a></li>
+<li><a href="features/models/sglang/">SgLang</a></li>
+<li><a href="features/models/tgi/">TGI</a></li>
+<li><a href="features/models/openai/">OpenAI</a></li>
+<li><a href="features/models/anthropic/">Anthropic</a></li>
+<li><a href="features/models/gemini/">Gemini</a></li>
+<li><a href="features/models/dottxt/">Dottxt</a></li>
 </ul>
 <h2 id="who-is-using-outlines">Who is using Outlines?</h2>
 <p>Hundreds of organisations and the main LLM serving frameworks (<a href="https://github.com/vllm-project/vllm">vLLM</a>, <a href="https://github.com/huggingface/text-generation-inference">TGI</a>, <a href="https://github.com/predibase/lorax">LoRAX</a>, <a href="https://github.com/xorbitsai/inference">xinference</a>, <a href="https://github.com/sgl-project/sglang/">SGLang</a>) use Outlines. Prominent companies and organizations that use Outlines include:</p>
@@ -3941,7 +3890,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 18, 2025 10:07:24 UTC"><span class="timeago" datetime="2025-06-18T10:07:24+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 18, 2025 10:07:24 UTC">2025-06-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 19, 2025 10:17:28 UTC"><span class="timeago" datetime="2025-06-19T10:17:28+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 19, 2025 10:17:28 UTC">2025-06-19</span>
   </span>
 
     
@@ -3979,14 +3928,14 @@
           <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
         </a>
       
-        <a href="https://github.com/cpfiffer" class="md-author" title="@cpfiffer">
-          
-          <img src="https://avatars.githubusercontent.com/u/422990?v=4&size=72" alt="cpfiffer">
-        </a>
-      
         <a href="https://github.com/rlouf" class="md-author" title="@rlouf">
           
           <img src="https://avatars.githubusercontent.com/u/3885044?v=4&size=72" alt="rlouf">
+        </a>
+      
+        <a href="https://github.com/cpfiffer" class="md-author" title="@cpfiffer">
+          
+          <img src="https://avatars.githubusercontent.com/u/422990?v=4&size=72" alt="cpfiffer">
         </a>
       
       
